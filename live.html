@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Match for Every Fan — Live View</title>
+  <link rel="stylesheet" href="/live.css">
+</head>
+<body>
+  <a class="skip" href="#match">Skip to match</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Match for Every Fan home"><span class="mark">M<span>F</span></span><span>Match for Every Fan<small>One match. Every perspective.</small></span></a>
+    <nav><span class="active-nav">Live view</span><a href="/replay.html">Event replay &amp; full controls →</a></nav>
+  </header>
+  <main id="match">
+    <div class="heading"><div><p class="eyebrow">WATCH THE MATCH YOUR WAY</p><h1>Match view</h1><p class="subhead">Your footage, with local visual cues and accessible commentary.</p></div><div class="connection"><span id="connectionDot" class="dot"></span><span id="connectionText">Checking local vision…</span></div></div>
+    <div class="shell">
+      <section class="viewer" aria-label="Football video and visual overlay">
+        <div class="source-bar" role="group" aria-label="Choose football video source">
+          <button id="sampleButton" class="selected">▶ Real sample</button>
+          <button id="captureButton">▣ Capture match window</button>
+          <label id="fileButton" class="file-button">＋ Open my clip<input id="fileInput" type="file" accept="video/*"></label>
+        </div>
+        <div id="stage" class="stage">
+          <video id="matchVideo" muted autoplay playsinline loop aria-label="Football match video"></video>
+          <canvas id="detections" aria-hidden="true"></canvas>
+          <div class="picture-label"><span id="sourceType">RECORDED SAMPLE</span><span id="analysisState">Starting local analysis…</span><span id="captionOrigin">LOCAL CAPTION</span></div>
+          <div id="caption" class="caption" role="status" aria-live="polite">Loading real football footage…</div>
+        </div>
+        <div class="player-bar"><button id="playButton" class="main-button">Ⅱ Pause</button><button id="muteButton">🔇 Muted</button><button id="fullButton">⛶ Full screen</button><span id="sourceNote">Recorded clip · analysed as it plays</span></div>
+        <p class="help" id="sourceHelp">This is real, recorded footage. To watch another match, choose a local clip or share an unprotected match window. Your frames stay on this computer.</p>
+      </section>
+      <aside class="assist" aria-label="Accessible match assistance">
+        <div class="assist-header"><div><p class="eyebrow">MATCH ASSIST</p><h2>What we can see</h2></div><span class="live-pill" id="livePill">LOCAL</span></div>
+        <div class="observation"><div><span class="metric-label">People visible</span><strong id="peopleCount">—</strong></div><div><span class="metric-label">Ball</span><strong id="ballState">Checking…</strong></div></div>
+        <div class="insight"><span class="eyebrow">ON-SCREEN UPDATE</span><p id="insightText">Starting local video analysis.</p><small id="confidenceNote">Recent-frame estimates can lag fast motion. Player identity, score and goals are not inferred.</small></div>
+        <div class="controls"><h3>Make it comfortable</h3><label class="switch"><span>Show detection boxes</span><input id="boxesToggle" type="checkbox" checked></label><label class="switch"><span>Show large captions</span><input id="captionsToggle" type="checkbox" checked></label><label class="switch"><span>Speak key updates</span><input id="speechToggle" type="checkbox"></label><label class="size-control">Caption size<select id="captionSize"><option value="normal">Normal</option><option value="large">Large</option><option value="extra">Extra large</option></select></label></div>
+        <div class="ai-box"><div><h3>Cloud AI commentary</h3><p id="aiState">Checking Microsoft Foundry…</p></div><button id="aiButton" disabled>Write caption from detections</button><label class="switch auto-ai"><span>Automatic text captions<small>Off by default · every 20 seconds at most</small></span><input id="autoAiToggle" type="checkbox" disabled></label><small>Text mode sends only the local people and ball summary. DeepSeek cannot see video.</small><div class="frame-ai"><h3>AI visual check</h3><p id="frameAiState">Checking image model…</p><button id="frameAiButton" disabled>AI inspect one frame</button><small>Manual only on this advanced page. Each click sends one image of the selected video to your Azure Foundry model and may cost money. If you captured a browser window, visible chat or other content may be included. Maximum 12 image requests per server session, shared with AI mode. The AI caption does not move the local ball box.</small></div></div>
+      </aside>
+    </div>
+    <footer><span>Sample: NaBUru38 · <a href="https://commons.wikimedia.org/wiki/File:2018_FIFA_U-17_Women%27s_World_Cup_-_New_Zealand_vs_Canada_-_22.webm" target="_blank" rel="noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a></span><span>Screen capture starts only after you choose a window.</span></footer>
+  </main>
+  <script type="module" src="/live.js"></script>
+</body>
+</html>

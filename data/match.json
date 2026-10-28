@@ -1,0 +1,1338 @@
+{
+  "schema_version": 1,
+  "match_id": "fictional-001",
+  "pitch_m": [
+    105,
+    68
+  ],
+  "teams": {
+    "harbour": {
+      "name": "Harbour FC",
+      "starters": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5"
+      ],
+      "players": {
+        "h1": "Mara Vale",
+        "h2": "Ari Bell",
+        "h3": "Noor Finch",
+        "h4": "Jules Rowan",
+        "h5": "Tess Calder",
+        "h6": "Eli Shore"
+      }
+    },
+    "ridge": {
+      "name": "Ridge United",
+      "starters": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "players": {
+        "r1": "Pax Reed",
+        "r2": "Lena Moss",
+        "r3": "Sam Kestrel",
+        "r4": "Ivo Marsh",
+        "r5": "Rae Solis",
+        "r6": "Kit Hollis"
+      }
+    }
+  },
+  "scenes": [
+    {
+      "id": "wing_build",
+      "title": "Wing build-up and a first goal",
+      "start_ms": 360000
+    },
+    {
+      "id": "counter",
+      "title": "Pressure, turnover and counterattack",
+      "start_ms": 3060000
+    },
+    {
+      "id": "late_change",
+      "title": "Late substitution and deciding goal",
+      "start_ms": 4800000
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E001",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 360000,
+      "event_type": "restart",
+      "team_id": "harbour",
+      "player_id": "h1",
+      "recipient_id": null,
+      "start_xy": [
+        52,
+        34
+      ],
+      "end_xy": [
+        52,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E002",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 374000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h1",
+      "recipient_id": "h2",
+      "start_xy": [
+        48,
+        32
+      ],
+      "end_xy": [
+        61,
+        20
+      ],
+      "outcome": "complete",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E003",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 388000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h2",
+      "recipient_id": "h3",
+      "start_xy": [
+        61,
+        20
+      ],
+      "end_xy": [
+        71,
+        11
+      ],
+      "outcome": "complete",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E004",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 405000,
+      "event_type": "pressure",
+      "team_id": "ridge",
+      "player_id": "r2",
+      "recipient_id": null,
+      "start_xy": [
+        72,
+        12
+      ],
+      "end_xy": [
+        72,
+        12
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E005",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 417000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h3",
+      "recipient_id": "h4",
+      "start_xy": [
+        71,
+        11
+      ],
+      "end_xy": [
+        82,
+        28
+      ],
+      "outcome": "complete",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E006",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 429000,
+      "event_type": "interception",
+      "team_id": "ridge",
+      "player_id": "r3",
+      "recipient_id": null,
+      "start_xy": [
+        82,
+        28
+      ],
+      "end_xy": [
+        80,
+        30
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E007",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 445000,
+      "event_type": "pass",
+      "team_id": "ridge",
+      "player_id": "r3",
+      "recipient_id": "r1",
+      "start_xy": [
+        80,
+        30
+      ],
+      "end_xy": [
+        61,
+        35
+      ],
+      "outcome": "complete",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E008",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 461000,
+      "event_type": "pass",
+      "team_id": "ridge",
+      "player_id": "r1",
+      "recipient_id": "r4",
+      "start_xy": [
+        61,
+        35
+      ],
+      "end_xy": [
+        34,
+        29
+      ],
+      "outcome": "complete",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E009",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 476000,
+      "event_type": "shot",
+      "team_id": "ridge",
+      "player_id": "r4",
+      "recipient_id": null,
+      "start_xy": [
+        25,
+        30
+      ],
+      "end_xy": [
+        0,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E010",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 490000,
+      "event_type": "save",
+      "team_id": "harbour",
+      "player_id": "h5",
+      "recipient_id": null,
+      "start_xy": [
+        3,
+        34
+      ],
+      "end_xy": [
+        8,
+        35
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [
+        "E009"
+      ],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E011",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 501000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h5",
+      "recipient_id": "h2",
+      "start_xy": [
+        8,
+        35
+      ],
+      "end_xy": [
+        35,
+        42
+      ],
+      "outcome": "complete",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E012",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 518000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h2",
+      "recipient_id": "h3",
+      "start_xy": [
+        35,
+        42
+      ],
+      "end_xy": [
+        68,
+        15
+      ],
+      "outcome": "complete",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E013",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 532000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h3",
+      "recipient_id": "h4",
+      "start_xy": [
+        68,
+        15
+      ],
+      "end_xy": [
+        88,
+        30
+      ],
+      "outcome": "complete",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E014",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 545000,
+      "event_type": "shot",
+      "team_id": "harbour",
+      "player_id": "h4",
+      "recipient_id": null,
+      "start_xy": [
+        88,
+        30
+      ],
+      "end_xy": [
+        105,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        0,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E015",
+      "match_id": "fictional-001",
+      "scene_id": "wing_build",
+      "period": 1,
+      "match_clock_ms": 557000,
+      "event_type": "goal",
+      "team_id": "harbour",
+      "player_id": "h4",
+      "recipient_id": null,
+      "start_xy": [
+        88,
+        30
+      ],
+      "end_xy": [
+        105,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [
+        "E014"
+      ],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E016",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3060000,
+      "event_type": "restart",
+      "team_id": "ridge",
+      "player_id": "r1",
+      "recipient_id": null,
+      "start_xy": [
+        52,
+        34
+      ],
+      "end_xy": [
+        52,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E017",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3077000,
+      "event_type": "pass",
+      "team_id": "ridge",
+      "player_id": "r1",
+      "recipient_id": "r2",
+      "start_xy": [
+        54,
+        34
+      ],
+      "end_xy": [
+        44,
+        19
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E018",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3093000,
+      "event_type": "pass",
+      "team_id": "ridge",
+      "player_id": "r2",
+      "recipient_id": "r3",
+      "start_xy": [
+        44,
+        19
+      ],
+      "end_xy": [
+        36,
+        32
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E019",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3105000,
+      "event_type": "pressure",
+      "team_id": "harbour",
+      "player_id": "h1",
+      "recipient_id": null,
+      "start_xy": [
+        35,
+        31
+      ],
+      "end_xy": [
+        35,
+        31
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E020",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3116000,
+      "event_type": "tackle",
+      "team_id": "harbour",
+      "player_id": "h1",
+      "recipient_id": null,
+      "start_xy": [
+        35,
+        31
+      ],
+      "end_xy": [
+        37,
+        31
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E021",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3129000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h1",
+      "recipient_id": "h2",
+      "start_xy": [
+        37,
+        31
+      ],
+      "end_xy": [
+        58,
+        20
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E022",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3143000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h2",
+      "recipient_id": "h4",
+      "start_xy": [
+        58,
+        20
+      ],
+      "end_xy": [
+        82,
+        29
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E023",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3157000,
+      "event_type": "shot",
+      "team_id": "harbour",
+      "player_id": "h4",
+      "recipient_id": null,
+      "start_xy": [
+        85,
+        30
+      ],
+      "end_xy": [
+        105,
+        35
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E024",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3173000,
+      "event_type": "save",
+      "team_id": "ridge",
+      "player_id": "r5",
+      "recipient_id": null,
+      "start_xy": [
+        102,
+        35
+      ],
+      "end_xy": [
+        96,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [
+        "E023"
+      ],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E025",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3190000,
+      "event_type": "pass",
+      "team_id": "ridge",
+      "player_id": "r5",
+      "recipient_id": "r3",
+      "start_xy": [
+        96,
+        34
+      ],
+      "end_xy": [
+        75,
+        43
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E026",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3201000,
+      "event_type": "pass",
+      "team_id": "ridge",
+      "player_id": "r3",
+      "recipient_id": "r4",
+      "start_xy": [
+        75,
+        43
+      ],
+      "end_xy": [
+        43,
+        40
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E027",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3214000,
+      "event_type": "shot",
+      "team_id": "ridge",
+      "player_id": "r4",
+      "recipient_id": null,
+      "start_xy": [
+        24,
+        40
+      ],
+      "end_xy": [
+        0,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        0
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E028",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3229000,
+      "event_type": "goal",
+      "team_id": "ridge",
+      "player_id": "r4",
+      "recipient_id": null,
+      "start_xy": [
+        24,
+        40
+      ],
+      "end_xy": [
+        0,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [
+        "E027"
+      ],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E029",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3244000,
+      "event_type": "restart",
+      "team_id": "harbour",
+      "player_id": "h1",
+      "recipient_id": null,
+      "start_xy": [
+        52,
+        34
+      ],
+      "end_xy": [
+        52,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E030",
+      "match_id": "fictional-001",
+      "scene_id": "counter",
+      "period": 2,
+      "match_clock_ms": 3255000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h1",
+      "recipient_id": "h3",
+      "start_xy": [
+        52,
+        34
+      ],
+      "end_xy": [
+        65,
+        20
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E031",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4800000,
+      "event_type": "kickoff",
+      "team_id": "harbour",
+      "player_id": "h1",
+      "recipient_id": null,
+      "start_xy": [
+        52,
+        34
+      ],
+      "end_xy": [
+        52,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E032",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4816000,
+      "event_type": "substitution",
+      "team_id": "harbour",
+      "player_id": "h3",
+      "recipient_id": "h6",
+      "start_xy": [
+        52,
+        34
+      ],
+      "end_xy": [
+        52,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E033",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4830000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h1",
+      "recipient_id": "h2",
+      "start_xy": [
+        52,
+        34
+      ],
+      "end_xy": [
+        63,
+        45
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E034",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4845000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h2",
+      "recipient_id": "h6",
+      "start_xy": [
+        63,
+        45
+      ],
+      "end_xy": [
+        75,
+        18
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E035",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4862000,
+      "event_type": "pressure",
+      "team_id": "ridge",
+      "player_id": "r2",
+      "recipient_id": null,
+      "start_xy": [
+        75,
+        18
+      ],
+      "end_xy": [
+        75,
+        18
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E036",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4873000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h6",
+      "recipient_id": "h4",
+      "start_xy": [
+        75,
+        18
+      ],
+      "end_xy": [
+        87,
+        33
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E037",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4888000,
+      "event_type": "shot",
+      "team_id": "harbour",
+      "player_id": "h4",
+      "recipient_id": null,
+      "start_xy": [
+        88,
+        33
+      ],
+      "end_xy": [
+        105,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E038",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4904000,
+      "event_type": "save",
+      "team_id": "ridge",
+      "player_id": "r5",
+      "recipient_id": null,
+      "start_xy": [
+        102,
+        34
+      ],
+      "end_xy": [
+        95,
+        33
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [
+        "E037"
+      ],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E039",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4915000,
+      "event_type": "pass",
+      "team_id": "ridge",
+      "player_id": "r5",
+      "recipient_id": "r1",
+      "start_xy": [
+        95,
+        33
+      ],
+      "end_xy": [
+        70,
+        36
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E040",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4926000,
+      "event_type": "interception",
+      "team_id": "harbour",
+      "player_id": "h6",
+      "recipient_id": null,
+      "start_xy": [
+        70,
+        36
+      ],
+      "end_xy": [
+        71,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E041",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4937000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h6",
+      "recipient_id": "h2",
+      "start_xy": [
+        71,
+        34
+      ],
+      "end_xy": [
+        83,
+        42
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E042",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4950000,
+      "event_type": "pass",
+      "team_id": "harbour",
+      "player_id": "h2",
+      "recipient_id": "h4",
+      "start_xy": [
+        83,
+        42
+      ],
+      "end_xy": [
+        92,
+        31
+      ],
+      "outcome": "complete",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E043",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4964000,
+      "event_type": "shot",
+      "team_id": "harbour",
+      "player_id": "h4",
+      "recipient_id": null,
+      "start_xy": [
+        92,
+        31
+      ],
+      "end_xy": [
+        105,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        1,
+        1
+      ],
+      "possession_team": "harbour",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E044",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4978000,
+      "event_type": "goal",
+      "team_id": "harbour",
+      "player_id": "h4",
+      "recipient_id": null,
+      "start_xy": [
+        92,
+        31
+      ],
+      "end_xy": [
+        105,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        2,
+        1
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [
+        "E043"
+      ],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    },
+    {
+      "event_id": "E045",
+      "match_id": "fictional-001",
+      "scene_id": "late_change",
+      "period": 2,
+      "match_clock_ms": 4990000,
+      "event_type": "kickoff",
+      "team_id": "ridge",
+      "player_id": "r1",
+      "recipient_id": null,
+      "start_xy": [
+        52,
+        34
+      ],
+      "end_xy": [
+        52,
+        34
+      ],
+      "outcome": "occurred",
+      "score_after": [
+        2,
+        1
+      ],
+      "possession_team": "ridge",
+      "related_event_ids": [],
+      "source": "synthetic",
+      "generation_seed": 20261025
+    }
+  ],
+  "provenance": "Fictional teams and players; AI-authored scenario outlines, deterministic program-generated events. No real match data."
+}

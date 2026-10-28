@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "source": "manual_annotation",
+  "video_id": "new_zealand_canada_2018_10s.webm",
+  "duration_s": 10.017,
+  "source_url": "https://commons.wikimedia.org/wiki/File:2018_FIFA_U-17_Women%27s_World_Cup_-_New_Zealand_vs_Canada_-_22.webm",
+  "notes": "CC BY-SA 4.0. Manual freeze-frame positions at 6.000 s. Connecting polylines highlight selected visible defending/attacking groups during a corner, NOT full-team back/forward lines or an offside determination. No midfield line inferred. Foot coordinates approximate; partially occluded players reviewed by visible feet/body extent. Snapshot is deliberately valid only 0.06 s.",
+  "events": [
+    {
+      "event_id": "T001",
+      "source": "manual_annotation",
+      "time_s": 6,
+      "end_s": 6.06,
+      "event_type": "observation",
+      "title": "Corner-kick positioning: a visible snapshot",
+      "score_after": null,
+      "evidence": [
+        "manual frame review: 00:06.000",
+        "A = white-kit defending group; B = red-kit attacking group"
+      ],
+      "narratives": {
+        "tactical": "At this corner, visible white-shirted defenders and red-shirted attackers occupy the goalmouth. Lines connect selected visible groups; they do not establish a full-team formation or offside line.",
+        "emotion": "The ball arrives in a crowded goalmouth. White shirts and red shirts contest the space. No goal is established in this clip.",
+        "casual": "Red shirts attack the corner. White shirts defend their goal. This paused view highlights the players we can see."
+      },
+      "markers": [
+        {
+          "team": "A",
+          "xy": [
+            15.703,
+            68.056
+          ]
+        },
+        {
+          "team": "A",
+          "xy": [
+            28.516,
+            63.75
+          ]
+        },
+        {
+          "team": "A",
+          "xy": [
+            32.031,
+            78.194
+          ]
+        },
+        {
+          "team": "A",
+          "xy": [
+            36.719,
+            68.194
+          ]
+        },
+        {
+          "team": "A",
+          "xy": [
+            41.484,
+            68.472
+          ]
+        },
+        {
+          "team": "A",
+          "xy": [
+            51.953,
+            71.528
+          ]
+        },
+        {
+          "team": "A",
+          "xy": [
+            53.594,
+            62.917
+          ]
+        },
+        {
+          "team": "A",
+          "xy": [
+            85.938,
+            61.25
+          ]
+        },
+        {
+          "team": "A",
+          "xy": [
+            88.281,
+            79.028
+          ]
+        },
+        {
+          "team": "B",
+          "xy": [
+            33.75,
+            60.278
+          ]
+        },
+        {
+          "team": "B",
+          "xy": [
+            38.125,
+            73.472
+          ]
+        },
+        {
+          "team": "B",
+          "xy": [
+            39.766,
+            62.5
+          ]
+        },
+        {
+          "team": "B",
+          "xy": [
+            57.656,
+            68.194
+          ]
+        },
+        {
+          "team": "B",
+          "xy": [
+            89.062,
+            56.111
+          ]
+        },
+        {
+          "team": "B",
+          "xy": [
+            91.641,
+            50.694
+          ]
+        }
+      ],
+      "lines": [
+        {
+          "team": "A",
+          "label": "Defence",
+          "points": [
+            [
+              15.703,
+              68.056
+            ],
+            [
+              28.516,
+              63.75
+            ],
+            [
+              36.719,
+              68.194
+            ],
+            [
+              41.484,
+              68.472
+            ],
+            [
+              51.953,
+              71.528
+            ]
+          ]
+        },
+        {
+          "team": "B",
+          "label": "Attack",
+          "points": [
+            [
+              33.75,
+              60.278
+            ],
+            [
+              39.766,
+              62.5
+            ],
+            [
+              57.656,
+              68.194
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

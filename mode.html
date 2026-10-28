@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Match for Every Fan — Demo V5</title>
+  <link rel="stylesheet" href="/mode.css">
+</head>
+<body>
+  <a class="skip" href="#viewer">Skip to match</a>
+  <header class="topbar"><div class="brand"><span class="brand-mark">MF</span><span>Match for Every Fan<small>One match. Every perspective.</small></span></div><span class="edition">DEMO V5 · LIVE MATCH GUIDE</span></header>
+  <main>
+    <div class="intro"><div><h1>The match, made clearer.</h1><p>Choose a match picture. Turn AI on when you want help following it.</p></div><div id="sourceBadge" class="source-badge">RECORDED SAMPLE</div></div>
+    <div class="source-picker" role="group" aria-label="Choose match video">
+      <button id="sampleButton" class="chosen">Watch sample</button>
+      <button id="captureButton">Capture match window</button>
+      <label id="fileButton" class="file-button">Open my clip<input id="fileInput" type="file" accept="video/*"></label>
+    </div>
+    <div class="layout">
+      <section id="viewer" class="viewer" aria-label="Match picture">
+        <div id="stage" class="stage">
+          <video id="matchVideo" controls muted autoplay playsinline loop aria-label="Football match video"></video>
+          <div id="pictureState" class="picture-state">SAMPLE · AI OFF</div>
+          <div id="caption" class="caption" role="status" aria-live="polite"><span id="captionCue" class="caption-cue" hidden>VIEWER CUE · </span><span id="captionText">Turn on AI mode for match guidance.</span></div>
+          <section id="recapOverlay" class="recap-overlay" aria-label="Segment recap" hidden><span class="eyebrow">AI RECAP · PREVIOUS CALLS</span><h2>What happened so far?</h2><ul id="recapBullets"></ul><p id="recapCoverage"></p><button id="recapClose">Continue watching</button></section>
+        </div>
+        <p id="sourceHelp" class="source-help">This is a real recorded sample. Your chosen video stays on this computer until you turn on an Azure image model.</p>
+      </section>
+      <aside class="assist" aria-label="AI match guide">
+        <div class="mode-head"><div><p class="eyebrow">MATCH ASSIST</p><h2>AI mode <span id="modeState">OFF</span></h2></div><span id="modeDot" class="mode-dot"></span></div>
+        <button id="aiModeButton" class="mode-button" aria-pressed="false" aria-expanded="false" aria-controls="aiFeatures" disabled>Turn on AI mode</button>
+        <p id="modeHelp" class="mode-help">Off: watch normally. No Azure requests.</p>
+        <div id="aiFeatures" class="ai-features" hidden>
+          <p class="feature-heading">WHAT TO HEAR</p>
+          <div class="delivery-choices" role="group" aria-label="What kind of match audio">
+            <button class="delivery-button" data-delivery="description" aria-pressed="true">Describe play<small>What is happening</small></button>
+            <button class="delivery-button" data-delivery="commentary" aria-pressed="false">Live call<small>Match energy</small></button>
+          </div>
+          <p class="feature-heading">STYLE</p>
+          <div class="style-choices" role="group" aria-label="Commentary style">
+            <button class="style-button" data-style="simple" aria-pressed="true">Simple</button>
+            <button class="style-button" data-style="professional" aria-pressed="false">Professional</button>
+            <button class="style-button" data-style="excited" aria-pressed="false">Excited</button>
+          </div>
+          <div class="feature-grid" role="group" aria-label="AI mode features">
+            <button id="commentaryButton" class="feature-button" aria-pressed="true"><span>AI captions</span><strong id="commentaryState">ON</strong></button>
+            <button id="voiceButton" class="feature-button" aria-pressed="false"><span>Read aloud</span><strong id="voiceState">OFF</strong></button>
+            <button id="speedButton" class="feature-button" aria-pressed="true"><span>Faster analysis</span><strong id="speedState">ON</strong></button>
+          </div>
+          <div id="voicePanel" class="voice-panel" hidden>
+            <label for="voiceSelect">Voice</label>
+            <select id="voiceSelect"><option value="">System voice</option></select>
+            <button id="voicePreviewButton" class="small-button">Preview voice</button>
+            <small>Edge offers online natural voices; these may use the browser's network service. <a href="https://support.microsoft.com/en-us/accessibility/windows/narrator/appendix-a-supported-languages-and-voices" target="_blank" rel="noreferrer">Windows voice guide</a></small>
+          </div>
+          <details class="cue-panel"><summary>Add a confirmed player or moment</summary>
+            <p>Optional cue for the next AI line. Use only what you know from the match.</p>
+            <label for="cuePlayer">Player name (optional)</label>
+            <input id="cuePlayer" maxlength="50" autocomplete="off" placeholder="e.g. Bellingham">
+            <label for="cueEvent">Confirmed moment</label>
+            <select id="cueEvent"><option value="on_ball">Player on the ball</option><option value="shot">Shot or big chance</option><option value="goal">Goal confirmed</option></select>
+            <button id="cueButton" class="small-button">Use in next call</button>
+            <small id="cueStatus">Manual cues are labelled separately from AI vision.</small>
+          </details>
+          <p id="speedHelp" class="feature-help">Scene guide checks about every 6 seconds. 36 checks per launch.</p>
+          <div class="recap-action"><button id="recapButton" disabled>Summarize this segment</button><p id="recapHelp">Collecting AI lines. 3 recaps per launch.</p></div>
+          <div id="commentaryReadout" class="readout"><span class="eyebrow">LATEST AI LINE</span><p id="insightText">AI is off.</p><div class="readout-bottom"><span id="insightSource">No analysis yet</span><span id="insightTime">—</span></div></div>
+          <details class="history-panel"><summary>Missed a line? Last 3 calls</summary><ol id="recentCalls"><li>No commentary yet.</li></ol></details>
+          <div class="shape-card"><span>VISIBLE TEAM SHAPE</span><strong id="shapeState">—</strong><small id="shapeChange">A full formation needs a wide view of the whole team.</small></div>
+          <div class="facts"><div><span>Players in view</span><strong id="peopleCount">—</strong></div><div><span>Ball in sampled view</span><strong id="ballState">—</strong></div></div>
+        </div>
+        <p id="aiStatus" class="ai-status">Checking local and Azure models…</p>
+        <p class="privacy-note">AI mode sends sampled pictures from your chosen video to Azure, up to 36 picture checks per launch. Recaps send only previous AI lines, not a new image. A shared window may include other visible content. Turning AI mode off stops new requests.</p>
+      </aside>
+    </div>
+    <footer><span>Real sample: NaBUru38 / <a href="https://commons.wikimedia.org/wiki/File:2018_FIFA_U-17_Women%27s_World_Cup_-_New_Zealand_vs_Canada_-_22.webm" target="_blank" rel="noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a></span></footer>
+  </main>
+  <script type="module" src="/mode.js"></script>
+</body>
+</html>

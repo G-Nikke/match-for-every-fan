@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "source": "manual_annotation",
+  "video_id": "amateur_goal.webm",
+  "duration_s": 31.988,
+  "source_url": "https://commons.wikimedia.org/wiki/File:Amateurfu%C3%9Fball_Torschuss_von_oben.webm",
+  "notes": "Approximate editorial event timing, not frame-accurate officiating. Opening markers valid for 0.25 s only; not tracked. No team identity, complete formation, score, or sound labels established. Annotations CC BY-SA 4.0.",
+  "events": [
+    {
+      "source": "manual_annotation",
+      "score_after": null,
+      "lines": [],
+      "event_id": "V001",
+      "time_s": 0,
+      "end_s": 0.25,
+      "event_type": "observation",
+      "title": "A snapshot of the visible players",
+      "narratives": {
+        "tactical": "Eight visible player foot positions are marked in this opening frame. Team identity and full-team formation are not established.",
+        "emotion": "A different perspective on the same game. Follow the players in this opening snapshot.",
+        "casual": "The dots mark people visible on the pitch. They do not identify teams."
+      },
+      "evidence": [
+        "manual frame review: 00:00.000"
+      ],
+      "markers": [
+        {
+          "team": "unknown",
+          "xy": [
+            40.3,
+            37.9
+          ]
+        },
+        {
+          "team": "unknown",
+          "xy": [
+            42.7,
+            38.9
+          ]
+        },
+        {
+          "team": "unknown",
+          "xy": [
+            47.2,
+            31
+          ]
+        },
+        {
+          "team": "unknown",
+          "xy": [
+            48.2,
+            48
+          ]
+        },
+        {
+          "team": "unknown",
+          "xy": [
+            58.3,
+            38
+          ]
+        },
+        {
+          "team": "unknown",
+          "xy": [
+            61.5,
+            41.4
+          ]
+        },
+        {
+          "team": "unknown",
+          "xy": [
+            63.3,
+            42
+          ]
+        },
+        {
+          "team": "unknown",
+          "xy": [
+            71.7,
+            40.2
+          ]
+        }
+      ]
+    },
+    {
+      "source": "manual_annotation",
+      "score_after": null,
+      "lines": [],
+      "event_id": "V002",
+      "time_s": 18.9,
+      "end_s": 19.8,
+      "event_type": "shot",
+      "title": "A shot toward the left-hand goal",
+      "narratives": {
+        "tactical": "The ball travels left toward goal. This is a manually reviewed shot sequence; no player identity or speed is inferred.",
+        "emotion": "A shot toward goal! Watch the left-hand end of the pitch.",
+        "casual": "A player tries to score in the goal on the left."
+      },
+      "evidence": [
+        "manual sequence review: 00:18.900–00:19.800"
+      ],
+      "markers": []
+    },
+    {
+      "source": "manual_annotation",
+      "score_after": null,
+      "lines": [],
+      "event_id": "V003",
+      "time_s": 19.8,
+      "end_s": 23,
+      "event_type": "goal",
+      "title": "Goal at the left-hand end",
+      "narratives": {
+        "tactical": "The reviewed shot sequence ends at the left-hand goal. The clip source also identifies this as a goal. The full match score is unknown.",
+        "emotion": "GOOOOAL! The finish at the left-hand end. A moment worth seeing again!",
+        "casual": "The ball goes into the left-hand goal. The full match score is not provided."
+      },
+      "evidence": [
+        "manual sequence review: 00:19.400–00:20.400",
+        "Commons source description: game with a goal"
+      ],
+      "markers": []
+    }
+  ]
+}
